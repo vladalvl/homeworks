@@ -1,14 +1,13 @@
 a = input("Введите строку: ").lower()
 
 a_set = set(a)
+max_len = 0
 
 for c in a_set:
-    a.count(c)
+    if a.count(c) > max_len:
+        max_len = a.count(c)
 
-for c in a_set:
-    b = max(c)
-
-a_len = len(str(b))
+a_len = len(str(max_len))
 
 for c in a_set:
     if not c.isalpha():
