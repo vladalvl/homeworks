@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ссылка №2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<h1>
+    Книги
+</h1>
+
+    {% for book in books %}
+    <p>{{ book }}</p>
+    {% endfor %}
+
+
+
+</body>
+</html>
